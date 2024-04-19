@@ -1,6 +1,8 @@
 import React from "react";
-import DigiImage from '../../assets/images/DigiTech-3.jpg'
+import DigiImage from '../../assets/images/DigiTech-3.jpg';
 import "./home.css";
+import ProductHomeSection from "../../components/product/ProductHomeSection";
+
 
 
 export default function Home() {
@@ -15,6 +17,10 @@ export default function Home() {
                     <h2>Shop laptops at a low price</h2>
                 </div>
             </section>
+
+            <div class="product-home-section">
+            <ProductHomeSection/> 
+            </div>
 
 
         </>

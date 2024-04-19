@@ -1,0 +1,55 @@
+
+@font-face {
+    font-family: Anton;
+    src: url(/src/assets/fonts/Berlin.ttf);
+  }
+
+.custom-left {
+    position: absolute;
+    left: 30px;
+}
+
+.custom-right {
+    position: absolute;
+    right: 50px;
+}
+
+.square-container {
+    width: 350px; /* Set width of the square container */
+    height: 300px; /* Set height of the square container */
+    background-color: #fff; /* White background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square-container img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+.product-btn {
+    display: inline-block;
+    color: #3C5B7D;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    border-radius: 5%;
+    cursor: pointer;
+    border: 1px solid #3C5B7D;
+    width: 10rem;
+}
+
+.product-btn:hover {
+    border: 1px solid #6E8DCF;
+    color: #6E8DCF;
+    transition: ease-in-out 0.3s;
+}
+
+h3{
+    font-family: Anton;
+    padding-top: 20px;
+  }
