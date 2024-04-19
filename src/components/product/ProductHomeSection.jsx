@@ -17,10 +17,10 @@ const ProductHomeSection = () => {
     const arrow =">";
 
     return (
-        <div className="container pt-5">
+        <div className="container pad">
             <div className="row">
                 <div className="col-md-6 custom-left">
-                    <h3 style={{ fontSize: '65px', color: '#3C5B7D' }}>SHOP OUR <br /> PRODUCTS</h3>
+                    <h3 style={{ color: '#3C5B7D' }}>SHOP OUR <br /> PRODUCTS</h3>
                     <p style={{ fontSize: '21px', color: '#3C5B7D'  }}>This is some text below the heading.</p>
                     <button className="product-btn">SHOW ALL {arrow} </button>
                 </div>

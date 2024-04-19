@@ -45,7 +45,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 110vh;
+    height: 120vh;
     width: 100%;
     
   }
@@ -103,7 +103,7 @@
       font-family: AlibabaSans;
       color: #F4F1ED;
       padding-bottom: 2rem;
-      padding-top: 3rem;
+      padding-top: 2rem;
       font-size: 1.5rem;
       
     }
@@ -122,22 +122,17 @@
       font-size: 1rem; 
   }
 
-  .companyName {
-      left: 10px; 
-      top: 10px; 
-      font-size: 14px; 
-      
-  }
 
   h1 {
-      font-size: 3rem; 
+      font-size: 2.5rem; 
       margin-top: 10rem; 
-      margin-bottom: 8rem; 
+      margin-bottom: 2rem; 
+  
+  }
 
   h2 {
-      font-size: 1.5rem; 
-      padding-bottom: 1.5rem; 
-      padding-top: 2rem; 
+    font-size: 1rem; 
+    padding-bottom: 1.5rem; 
   }
 
   p {
@@ -152,8 +147,9 @@
       padding-top: 1rem; 
       margin-top: 0.5rem; /* Adjusting the top margin of the hero button */
   }
+  
 }
-}
+
 
 .product-home-section {
     height: 115vh;
