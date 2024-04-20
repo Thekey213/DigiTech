@@ -8,10 +8,10 @@ import fourthImage from '../../assets/images/4.jpg'
 
 const ProductHomeSection = () => {
     const products = [
-        { image: firstImage, title: 'HP', price: '$100' },
-        { image: secondImage, title: 'Lenovo', price: '$100' },
-        { image: thirdImage, title: 'Acer', price: '$100' },
-        { image: fourthImage, title: 'Lenovo', price: '$100' }
+        { image: firstImage, title: 'HP', price: 'R100' },
+        { image: secondImage, title: 'Lenovo', price: 'R100' },
+        { image: thirdImage, title: 'Acer', price: 'R100' },
+        { image: fourthImage, title: 'Lenovo', price: 'R100' }
     ];
 
     const arrow =">";
@@ -20,8 +20,8 @@ const ProductHomeSection = () => {
         <div className="container pad">
             <div className="row">
                 <div className="col-md-6 custom-left">
-                    <h3 style={{ color: '#3C5B7D' }}>SHOP OUR <br /> PRODUCTS</h3>
-                    <p style={{ fontSize: '21px', color: '#3C5B7D'  }}>This is some text below the heading.</p>
+                    <h3 style={{ color: ' #6E8DCF' }}>SHOP OUR <br /> PRODUCTS</h3>
+                    <p class="alibaba" style={{ fontSize: '21px', color: '#3C5B7D', fontWeight: 'bold' }}>View Our Laps</p>
                     <button className="product-btn">SHOW ALL {arrow} </button>
                 </div>
                 <div className="col-md-6 custom-right">

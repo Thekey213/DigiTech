@@ -4,6 +4,13 @@
     src: url(/src/assets/fonts/Berlin.ttf);
   }
 
+   
+  @font-face {
+    font-family: AlibabaSans;
+    src: url(/src/assets/fonts/AlibabaSans-Regular.ttf);
+  }
+  
+
 .custom-left {
     position: absolute;
     left: 30px;
@@ -15,8 +22,8 @@
 }
 
 .square-container {
-    width: 240px; /* Set width of the square container */
-    height: 250px; /* Set height of the square container */
+    width: 15rem; /* Set width of the square container */
+    height: 13rem; /* Set height of the square container */
     background-color: #fff; /* White background */
     display: flex;
     justify-content: center;
@@ -57,6 +64,10 @@ h3 {
     font-family: Anton;
     padding-top: 10px;
     font-size: 65px;
+  }
+
+  .alibaba{
+    font-family: AlibabaSans;
   }
 
 
