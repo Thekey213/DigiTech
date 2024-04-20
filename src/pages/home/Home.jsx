@@ -2,7 +2,7 @@ import React from "react";
 import DigiImage from '../../assets/images/DigiTech-3.jpg';
 import "./home.css";
 import ProductHomeSection from "../../components/product/ProductHomeSection";
-
+import FooterSection from "../../components/home/FooterSection";
 
 
 export default function Home() {
@@ -21,6 +21,13 @@ export default function Home() {
             <div class="product-home-section">
             <ProductHomeSection/> 
             </div>
+
+             <div class="product-footer-section">
+            <FooterSection/> 
+            </div>
+
+
+
 
 
         </>
