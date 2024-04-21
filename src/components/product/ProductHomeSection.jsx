@@ -19,12 +19,12 @@ const ProductHomeSection = () => {
     return (
         <div className="container pad">
             <div className="row">
-                <div className="col-md-6 custom-left">
+                <div className="col-md-6 ">
                     <h3 style={{ color: ' #6E8DCF' }}>SHOP OUR <br /> PRODUCTS</h3>
                     <p class="alibaba" style={{ fontSize: '21px', color: '#3C5B7D', fontWeight: 'bold' }}>View Our Laps</p>
                     <button className="product-btn">SHOW ALL {arrow} </button>
                 </div>
-                <div className="col-md-6 custom-right">
+                <div className="col-md-6 ">
                     <ProductRow products={products} />
                 </div>
             </div>
