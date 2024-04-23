@@ -2,6 +2,7 @@
 import React from "react";
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from "react-router-dom";
 
 const Product = ({ product }) => {
   
@@ -9,11 +10,14 @@ const Product = ({ product }) => {
 
     <>
 
-<div style={{marginBottom:'2rem'}} className="square-container product">
-      <img src={product.image} alt={product.name} />
-      
-    </div>
 
+    <Link to={`/product/${product.id}` }  style={{ textDecoration: 'none', color: 'inherit' }}>
+
+   <div style={{marginBottom:'2rem'}} className="square-container product">
+      <img src={product.image} alt={product.name} />
+ 
+    </div>
+    </Link>
 <div className="product-info">
 <p>{product.title}</p>
 <h3 style={{fontSize:'1rem'}}>${product.price}</h3>

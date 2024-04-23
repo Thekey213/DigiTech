@@ -1,23 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-
-import firstImage from '../../assets/images/1.jpg'
-import secondImage from '../../assets/images/2.jpg'
-import thirdImage from '../../assets/images/3.jpg'
-import fourthImage from '../../assets/images/4.jpg'
+import './product.css';
+import productData from '../../../productData.json';
 
 // Mock data source
-const products = [
-    { id: 1, image: firstImage, title: 'HP', price: '200' },
-    { id: 2, image: secondImage, title: 'Lenovo', price: '300' },
-    { id: 3, image: thirdImage, title: 'Acer', price: '550' },
-    { id: 4, image: fourthImage, title: 'Lenovo', price: '500' },
-    { id: 5, image: firstImage, title: 'HP', price: '200' },
-    { id: 6, image: secondImage, title: 'Lenovo', price: '300' },
-    { id: 7, image: thirdImage, title: 'Acer', price: '550' },
-    { id: 8, image: fourthImage, title: 'Lenovo', price: '500' },
- // Add more products as needed
-];
+const products = productData.products;
 
 const getProductById = (id) => {
  return products.find(product => product.id === parseInt(id));
@@ -26,14 +13,50 @@ const getProductById = (id) => {
 const ProductDetail = () => {
  const { id } = useParams();
  const product = getProductById(id);
+ const [selectedRam, setSelectedRam] = useState('8gb'); // Default to 8GB
+ const [totalPrice, setTotalPrice] = useState(parseInt(product.price.replace(/,/g, ''), 10)); // Initialize with base price
+
+ const handleRamChange = (event) => {
+    const ramOption = event.target.value;
+    setSelectedRam(ramOption);
+    let ramPrice = 0; // Initialize RAM price to 0
+    if (ramOption === '8gb') {
+        ramPrice = 600; // Set price for 8GB RAM
+    } else if (ramOption === '16gb') {
+        ramPrice = 1200; // Set price for 16GB RAM
+    }
+    // Remove commas from the price string and parse it as an integer
+    const basePrice = parseInt(product.price.replace(/,/g, ''), 10);
+    const totalPrice = basePrice + ramPrice; // Calculate total price
+    setTotalPrice(totalPrice); // Update the total price in the state
+ };
 
  return (
-    <div>
-      <h2>{product.title}</h2>
-      <img src={product.image} alt={product.title} />
-      <p>{product.description}</p>
-      <h3>Price: ${product.price}</h3>
-      <button>Add to Cart</button>
+    <div className="container mt-5">
+      <div className="row">
+        <div className="col-md-6">
+          <img src={product.image} alt={product.title} className="img-fluid" />
+        </div>
+        <div className="col-md-6 product-detail-content" >
+          <h2>{product.title}</h2>
+          <h3>R{totalPrice.toLocaleString()}</h3> {/* Display the updated total price with commas */}
+          <h4>Specs</h4>
+          <ul className="list-unstyled">
+            {product.specs.map((spec, index) => (
+              <li key={index}>{spec}</li>
+            ))}
+          </ul>
+          <div className="ram-select-container">
+             <label htmlFor="ram">Select RAM:</label>
+            <select id="ram" name="ram" value={selectedRam} onChange={handleRamChange}>
+            <option value="8gb">8GB - R600</option>
+            <option value="16gb">16GB - R1200</option>
+            </select>
+             <button className="">Add to Cart</button>
+            </div>
+
+        </div>
+      </div>
     </div>
  );
 };

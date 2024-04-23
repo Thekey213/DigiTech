@@ -146,3 +146,74 @@ h2{
   max-height: 70%;
   object-fit: contain;
 }
+
+
+/* Product details (Product.jsx) */
+
+.product-detail-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .product-detail-image {
+  width: 50%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+ }
+ 
+ .product-detail-content {
+  width: 45%;
+  padding-left: 20px;
+ }
+ 
+ .product-detail-content h2,
+ .product-detail-content p,
+ .product-detail-content h3 {
+  margin-bottom: 10px;
+ }
+ 
+ .product-detail-content button {
+  background-color: white;
+  color: #49444B;
+  border: none solid #C7B7CD;
+  padding: 8px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 1rem;
+}
+ 
+ 
+ .product-detail-content button:hover {
+  background-color:  #333;
+  color: whitesmoke;
+ }
+
+ select {
+  display: block;
+  width: 25%;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+ }
+
+ .ram-select-container {
+  display: flex;
+  align-items: center;
+   gap: 10px;
+  margin-top: 20px;
+ }
+ 
