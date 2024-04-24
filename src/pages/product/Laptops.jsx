@@ -2,7 +2,7 @@ import React from "react";
 import Product from "./Product";
 import { Link } from "react-router-dom";
 import "./product.css";
-import productData from '../../../productData.json';
+import productData from '../../../productData';
 
 
 
@@ -11,7 +11,7 @@ import productData from '../../../productData.json';
 export default function Laptops() {
 
 
-  const products = productData.products;
+  const products = productData;
 
   
   return (

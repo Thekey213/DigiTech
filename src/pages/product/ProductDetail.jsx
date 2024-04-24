@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './product.css';
-import productData from '../../../productData.json';
-
+import productData from '../../../productData';
 // Mock data source
-const products = productData.products;
+const products = productData;
 
 const getProductById = (id) => {
  return products.find(product => product.id === parseInt(id));

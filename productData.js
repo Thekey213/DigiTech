@@ -1,10 +1,13 @@
 
+import firstImage from '../DigiTech/src/assets/images/1.jpg'
+import secondImage from '../DigiTech/src/assets/images/2.jpg'
+import thirdImage from '../DigiTech/src/assets/images/3.jpg'
+import fourthImage from '../DigiTech/src/assets/images/4.jpg'
 
-{
-    "products": [
+   const products = [
        {
          "id": 1,
-         "image": "src/assets/images/1.jpg",
+         "image": firstImage,
          "title": "HP",
          "price": "14,500",
          "description": "HP Laptop",
@@ -20,7 +23,7 @@
        },
        {
          "id": 2,
-         "image": "src/assets/images/2.jpg",
+         "image": secondImage,
          "title": "Lenovo",
          "price": "12,000",
          "description": "Lenovo Laptop",
@@ -36,7 +39,7 @@
        },
        {
          "id": 3,
-         "image": "src/assets/images/3.jpg",
+         "image": thirdImage,
          "title": "Acer",
          "price": "10,000",
          "description": "Acer Laptop",
@@ -52,7 +55,7 @@
        },
        {
          "id": 4,
-         "image": "src/assets/images/4.jpg",
+         "image": fourthImage,
          "title": "Dell",
          "price": "9,500",
          "description": "Dell Laptop",
@@ -67,7 +70,7 @@
          ]
        }
     ]
-   }
-   
+  
 
+    export default products;
    
