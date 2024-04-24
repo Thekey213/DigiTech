@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './product.css';
 import productData from '../../../productData';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
+
+
 
 // Mock data source
 const products = productData;
@@ -33,6 +38,9 @@ const ProductDetail = () => {
 
  return (
     <div className="container mt-5 pt-5">
+       <Link to="/cart" className="cart-icon">
+          <FontAwesomeIcon icon={faShoppingBag} />
+        </Link>
       <div className="row">
         <div className="col-md-6">
           <img src={product.image} alt={product.title} className="img-fluid" />

@@ -22,7 +22,7 @@ export default function Laptops() {
      <div style={{marginTop:'5rem', marginBottom:'5rem',textAlign: "center"}}>
      <h2 style={{ color: "#6E8DCF"}} > LAPTOPS</h2>
 
-     <Link to="/cart" className="cart-icon">
+        <Link to="/cart" className="cart-icon">
           <FontAwesomeIcon icon={faShoppingBag} />
         </Link>
      </div>
