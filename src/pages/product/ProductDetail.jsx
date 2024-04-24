@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './product.css';
 import productData from '../../../productData';
+
 // Mock data source
 const products = productData;
 
@@ -31,7 +32,7 @@ const ProductDetail = () => {
  };
 
  return (
-    <div className="container mt-5">
+    <div className="container mt-5 pt-5">
       <div className="row">
         <div className="col-md-6">
           <img src={product.image} alt={product.title} className="img-fluid" />

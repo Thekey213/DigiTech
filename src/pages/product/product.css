@@ -148,6 +148,52 @@ h2{
 }
 
 
+
+/* Product details (Product.jsx) smaller screens */
+
+
+
+ /* Adjust padding for smaller screens */
+ .mt-5, .pt-5 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+ }
+ 
+ /* Adjust font sizes for smaller screens */
+ @media (max-width: 576px) {
+  .product-detail-content h2,
+  .product-detail-content h3,
+  .product-detail-content h4 {
+     font-size: 1.25rem;
+  }
+ 
+  .product-detail-content ul li {
+     font-size: 0.875rem;
+  }
+  
+ }
+ 
+ /* Ensure the select and button are full width on smaller screens */
+/* Ensure the product-detail-content div takes up the full width of its container on mobile */
+@media (max-width: 480px) {
+  .product-detail-content {
+     width: 100%;
+  }
+ }
+ 
+ /* Optional: Adjust padding and margins for better spacing on mobile */
+ @media (max-width: 480px) {
+  .product-detail-content {
+     padding: 20px; /* Adjust as needed */
+     margin-bottom: 20px; /* Adjust as needed */
+  }
+ }
+ 
+
+
+
+
+
 /* Product details (Product.jsx) */
 
 .product-detail-container {
@@ -215,5 +261,30 @@ h2{
   align-items: center;
    gap: 10px;
   margin-top: 20px;
+ }
+ 
+
+ .cart-icon {
+ position: absolute;
+ right: 20px;
+ top: 20px;
+ color: #6E8DCF; /* Adjust the color as needed */
+ cursor: pointer;
+}
+
+
+/* Ensure the product-detail-content div takes up the full width of its container on mobile */
+@media (max-width: 480px) {
+  .product-detail-content {
+     width: 100%;
+  }
+ }
+ 
+ /* Optional: Adjust padding and margins for better spacing on mobile */
+ @media (max-width: 480px) {
+  .product-detail-content {
+     padding: 20px; /* Adjust as needed */
+     margin-bottom: 20px; /* Adjust as needed */
+  }
  }
  
