@@ -219,10 +219,12 @@ h2{
   padding-left: 20px;
  }
  
+ .product-detail-content li,
  .product-detail-content h2,
  .product-detail-content p,
  .product-detail-content h3 {
   margin-bottom: 10px;
+  color:#333;
  }
  
  .product-detail-content button {
@@ -287,4 +289,5 @@ h2{
      margin-bottom: 20px; /* Adjust as needed */
   }
  }
+ 
  

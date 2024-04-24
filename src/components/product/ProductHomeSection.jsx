@@ -5,6 +5,7 @@ import firstImage from '../../assets/images/1.jpg'
 import secondImage from '../../assets/images/2.jpg'
 import thirdImage from '../../assets/images/3.jpg'
 import fourthImage from '../../assets/images/4.jpg'
+import { Link } from 'react-router-dom';
 
 const ProductHomeSection = () => {
     const products = [
@@ -22,7 +23,12 @@ const ProductHomeSection = () => {
                 <div className="col-md-6 ">
                     <h3 style={{ color: ' #6E8DCF' }}>SHOP OUR <br /> PRODUCTS</h3>
                     <p class="alibaba" style={{ fontSize: '21px', color: '#3C5B7D', fontWeight: 'bold' }}>View Our Laps</p>
-                    <button className="product-btn">SHOW ALL {arrow} </button>
+                    <button className="product-btn">
+                        <Link to='laptops'  style={{ textDecoration: 'none' }}>
+                        SHOW ALL {arrow}
+                        </Link>
+                        
+                        </button>
                 </div>
                 <div className="col-md-6 ">
                     <ProductRow products={products} />
