@@ -46,7 +46,7 @@ const Cart = () => {
           <div className="cart-buttons">
            
              <Link to="/laptops">
-              <button className="continue-shopping">Continue Shopping</button>
+              <button className="continue-shopping">Laptops</button>
               </Link> 
 
               <Link to="/checkout">

@@ -50,26 +50,27 @@
 }
 
 .cart-container img {
-  width: 250px;
-  height:250px;
+  width: 200px;
+  height:150px;
   margin-bottom: 10px;
   border-radius: 8px;
 }
 
 .cart-container button {
-  background-color: #666;
+  background-color:#6E8DCF;
   color: #fff;
   border: none;
   padding: 8px 16px;
   margin-top: 10px;
-  border-radius: 1px;
-  border: 1px solid #333;
+  border-radius: 10px;
+  margin-left: 0.3rem;
+ 
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .cart-container button:hover {
-  background-color: #333;
+  background-color: #213e7a;
 }
 
 
@@ -82,7 +83,7 @@
 
 .cart-container .continue-shopping,
 .cart-container .checkout {
-  background-color: cadetblue;
+  background-color:#213e7a;
   color: white;
   border: none;
   padding: 10px 20px;
