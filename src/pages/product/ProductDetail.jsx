@@ -61,9 +61,9 @@ const ProductDetail = () => {
           <img src={product.image} alt={product.title} className="img-fluid" />
         </div>
         <div className="col-md-6 product-detail-content" >
-          <h2 style={{marginBottom:'0rem', fontWeight:'bold'}}>{product.title}</h2>
-          <h5>R{totalPrice.toLocaleString()}</h5> {/* Display the updated total price with commas */}
-          <h5 style={{fontWeight:'bold', }}>Specs</h5>
+          <h2>{product.title}</h2>
+          <h3>R{totalPrice.toLocaleString()}</h3> {/* Display the updated total price with commas */}
+          <h4>Specs</h4>
           <ul className="list-unstyled">
             {product.specs.map((spec, index) => (
               <li key={index}>{spec}</li>

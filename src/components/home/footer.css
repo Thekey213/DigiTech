@@ -4,7 +4,7 @@
   }
   
  
- ul li {
+  .myfooter ul li {
    list-style: none;
    font-family: AlibabaSans;
    color: white;
@@ -12,12 +12,12 @@
 
 }
 
-h3{
+.myfooter h3{
     font-size: 75px;
 }
 
 
-h4 {
+.myfooter h4 {
     font-family: AlibabaSans;
     color: white;
     font-weight: bold;

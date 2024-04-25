@@ -48,7 +48,12 @@ const Cart = () => {
              <Link to="/laptops">
               <button className="continue-shopping">Continue Shopping</button>
               </Link> 
-            <button className="checkout">Checkout</button>
+
+              <Link to="/checkout">
+              <button className="checkout">Checkout</button>
+              </Link>
+          
+            
           </div>
         </>
       )}

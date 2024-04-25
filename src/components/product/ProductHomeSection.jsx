@@ -18,7 +18,7 @@ const ProductHomeSection = () => {
     const arrow =">";
 
     return (
-        <div className="container pad">
+        <div className="container producthome pad">
             <div className="row">
                 <div className="col-md-6 ">
                     <h3 style={{ color: ' #6E8DCF' }}>SHOP OUR <br /> PRODUCTS</h3>

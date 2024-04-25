@@ -21,7 +21,7 @@ const Product = ({ product }) => {
 
     <Link to={`/product/${product.id}` }  style={{ textDecoration: 'none', color: 'inherit' }}>
 
-   <div style={{marginBottom:'2rem'}} className="square-container product">
+   <div className="square-container product">
       <img src={product.image} alt={product.name} />
  
     </div>

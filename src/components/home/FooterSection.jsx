@@ -7,7 +7,7 @@ export class FooterSection extends Component {
     return (
    
 
-<div className="container ">
+<div className="container myfooter ">
 <div className="row">
     <div className="col-md-6">
         <h3 style={{ color:'white',marginTop:'4rem'}}>WE WANT TO HEAR FROM YOU!</h3>
