@@ -16,7 +16,7 @@ const ProductHomeSection = () => {
                     <h3 style={{ color: ' #6E8DCF' }}>SHOP OUR <br /> PRODUCTS</h3>
                     <p className="alibaba" style={{ fontSize: '21px', color: '#3C5B7D', fontWeight: 'bold' }}>View Our Laps</p>
                     <button className="product-btn">
-                        <Link to='laptops'  style={{ textDecoration: 'none' }}>
+                        <Link to='laptops'  style={{ textDecoration: 'none',color: ' #6E8DCF'}}>
                         SHOW ALL {arrow}
                         </Link>
                         

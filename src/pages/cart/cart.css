@@ -113,4 +113,19 @@
 
    
  }
+
+ .checkOutButton button {
+  background-color: white;
+  color: #6E8DCF;
+  border: none solid #C7B7CD;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkOutButton button:hover {
+  background-color:   #6E8DCF;
+  color: white;
+}
  

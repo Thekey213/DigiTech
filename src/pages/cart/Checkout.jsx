@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./cart.css";
 
 const Checkout = () => {
   const [formData, setFormData] = useState({
@@ -44,7 +45,7 @@ const Checkout = () => {
             {/* Your cart section */}
           </div>
           <div className="col-md-7 col-lg-8">
-            <h4 className="mb-3">Billing address</h4>
+            <h4 style={{color:'#6E8DCF'}} className="mb-3">Billing address</h4>
             <form
               className={validated ? "needs-validation was-validated" : "needs-validation"}
               noValidate
@@ -118,7 +119,7 @@ const Checkout = () => {
 
               <hr className="my-4" />
 
-              <h4 className="mb-3">Payment</h4>
+              <h4 style={{color:'#6E8DCF'}}  className="mb-3">Payment</h4>
 
               <div className="my-3">
                 <div className="form-check">
@@ -220,8 +221,10 @@ const Checkout = () => {
               )}
 
               <hr className="my-4" />
+               <div className="checkOutButton">
+              <button   className="w-100  btn-lg"  type="submit">Continue to checkout</button>
 
-              <button className="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+               </div>
             </form>
           </div>
         </div>
