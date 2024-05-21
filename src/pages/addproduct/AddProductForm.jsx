@@ -141,7 +141,7 @@ const AddProductForm = () => {
        <input type="file" onChange={handleImageChange} required />
     </div>
 
-      <button type="submit">Submit</button>
+      <button type="submit">Start</button>
     </form>
   );
 };
